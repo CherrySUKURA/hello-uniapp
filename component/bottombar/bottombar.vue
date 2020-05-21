@@ -1,9 +1,8 @@
 <template>
 	<view class="bottombar-content content">
 		<view class="bottombar-flex">
-			<navigator v-for="(item,index) in bottombar_list" :url="item.url" class="bottombar-list">
-					<image :src="item.img"></image>
-
+			<navigator v-for="(item,index) in bottombar_list" @click="bottomnA(item.url)" class="bottombar-list">
+				<image :src="item.img"></image>
 			</navigator>
 		</view>
 	</view>
@@ -46,7 +45,11 @@
 			}
 		},
 		methods: {
-
+			bottomnA(i){
+				uni.redirectTo({
+					url:i
+				})
+			}
 		},
 		created: function (){
 			this.bottombar_list[this.indexnumber].img = "../../static/SY_ACTIVE.png"

@@ -9,23 +9,15 @@
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMoutations} from 'vuex'
 	export default {
 		data() {
 			return {
-				// background: [['color1','A'],['color2','B'],['color3','C']]
-				background:[
-					{
-						img: "../../static/carousel.jpg"
-					},
-					{
-						img: "../../static/carousel1.jpg"
-					},
-					{
-						img: "../../static/carousel2.jpg"
-					}
-					
-				]
+
 			}
+		},
+		computed: {
+			...mapState(['background'])
 		}
 	}
 </script>

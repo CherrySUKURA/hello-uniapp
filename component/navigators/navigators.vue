@@ -4,13 +4,13 @@
 			<swiper class="swiper content" indicator-dots="true" circular="false" indicator-color="gray" indicator-active-color="red">
 				<swiper-item class="swiper-item">
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list">
+						<navigator class="navigator-list" v-for="(item,index) in navigator_list" :key="index">
 							<image :src="item"></image>
 							<text>{{index}}</text>
 						</navigator>
 					</view>
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list2">
+						<navigator class="navigator-list" v-for="(item,index) in navigator_list2" :key="index">
 							<image :src="item"></image>
 							<text>{{index}}</text>
 						</navigator>
@@ -18,13 +18,13 @@
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list3">
+						<navigator class="navigator-list" v-for="(item,index) in navigator_list3" :key="index">
 							<image :src="item"></image>
 							<text>{{index}}</text>
 						</navigator>
 					</view>
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list4">
+						<navigator class="navigator-list" v-for="(item,index) in navigator_list4" :key="index">
 							<image :src="item"></image>
 							<text>{{index}}</text>
 						</navigator>

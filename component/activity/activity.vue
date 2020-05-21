@@ -11,37 +11,20 @@
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
 	export default {
 		data() {
 			return {
-				swiper: {
-					margin: "240rpx",
-					index: 0
-				},
-				activity: [
-					{
-						image: "../../static/activity.png",
-						url: "../../pagess/index/index"
-					},
-					{
-						image: "../../static/activity.png",
-						url: "../../pagess/index/index"
-					},
-					{
-						image: "../../static/activity.png",
-						url: "../../pagess/index/index"
-					},
-					{
-						image: "../../static/activity.png",
-						url: "../../pagess/index/index"
-					}
-				]
+
 			}
 		},
 		methods: {
 			swiperChange(e){
 				this.swiper.index = e.detail.current 
 			}
+		},
+		computed: {
+			...mapState(['swiper','activity'])
 		}
 	}
 </script>
@@ -51,7 +34,6 @@
 		height: 200rpx;
 	} 
 	.a1{
-		width: 100%;
 		height: 200rpx;
 	}
 	.le-img {
@@ -60,11 +42,11 @@
 		display: block;
 		border-radius: 4px;
 		margin: auto;
-		transform: scale(0.8);
+		transform: scale(1);
 		transition: transform 0.3s ease-in-out 0s;
 	}
 	.le-active{
-		transform: scale(1);
+		transform: scale(1.2);
 		transition: transform 0.3s ease-in-out 0s;
 	}
 </style>
