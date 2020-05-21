@@ -1,0 +1,35 @@
+
+.XR-flex.data-v-1221aae7{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 0;
+}
+.XRTZ.data-v-1221aae7{
+	width: 360rpx;
+	height: 230rpx;
+}
+.XRTZ:first-child image.data-v-1221aae7{
+	-webkit-border-bottom-left-radius: 15rpx;
+	        border-bottom-left-radius: 15rpx;
+	-webkit-border-top-left-radius: 15rpx;
+	        border-top-left-radius: 15rpx;
+}
+.XRTZ:last-child image.data-v-1221aae7{
+	-webkit-border-bottom-right-radius: 15rpx;
+	        border-bottom-right-radius: 15rpx;
+	-webkit-border-top-right-radius: 15rpx;
+	        border-top-right-radius: 15rpx;
+}
+.XRTP.data-v-1221aae7{
+	width: 100%;
+	height: 100%;
+}
+

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-bottombar": "/component/bottombar/bottombar"
+  }
+}

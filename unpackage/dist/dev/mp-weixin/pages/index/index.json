@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "v-carousel": "/component/carousel/carousel",
+    "v-navigators": "/component/navigators/navigators",
+    "v-bottombar": "/component/bottombar/bottombar",
+    "v-seckill": "/component/seckill/seckill",
+    "v-newhuman": "/component/newhuman/newhuman",
+    "v-activity": "/component/activity/activity"
+  }
+}

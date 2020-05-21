@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "component/carousel/carousel",
+    "component/navigators/navigators",
+    "component/bottombar/bottombar",
+    "component/seckill/seckill",
+    "pages/fu/fu",
+    "component/newhuman/newhuman",
+    "component/activity/activity"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

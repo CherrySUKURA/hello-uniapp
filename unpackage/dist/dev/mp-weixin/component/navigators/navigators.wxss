@@ -1,0 +1,30 @@
+
+.navigator-content.data-v-3b8c2707{
+	background-color: #FFFFFF;
+	-webkit-border-radius: 15rpx;
+	        border-radius: 15rpx;
+}
+.navigator-flex.data-v-3b8c2707{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-flow:row wrap;
+	        flex-flow:row wrap;
+	-webkit-justify-content:space-around;
+	        justify-content:space-around;
+	margin-bottom: 40rpx;
+	text-align: center;
+	font-size: 22rpx;
+}
+.navigator-list.data-v-3b8c2707{
+	width: 110rpx;
+	height: 110rpx;
+	margin-top:20rpx;
+}
+.navigator-list image.data-v-3b8c2707{
+	width: 100rpx;
+	height: 100rpx;
+}
+

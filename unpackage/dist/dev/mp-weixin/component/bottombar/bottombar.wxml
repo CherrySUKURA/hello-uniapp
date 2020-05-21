@@ -1,0 +1,1 @@
+<view class="bottombar-content content data-v-668308d9"><view class="bottombar-flex data-v-668308d9"><block wx:for="{{bottombar_list}}" wx:for-item="item" wx:for-index="index"><navigator class="bottombar-list data-v-668308d9" url="{{item.url}}"><image src="{{item.img}}" class="data-v-668308d9"></image></navigator></block></view></view>

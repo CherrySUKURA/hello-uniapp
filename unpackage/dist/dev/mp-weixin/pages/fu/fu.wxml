@@ -1,0 +1,1 @@
+<view><view class="bottombar"><v-bottombar vue-id="0fc87040-1" indexnumber="{{indexnumber}}" bind:__l="__l"></v-bottombar></view></view>

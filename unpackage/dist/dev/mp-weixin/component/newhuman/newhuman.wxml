@@ -1,0 +1,1 @@
+<view class="newhuman-content data-v-1221aae7"><view class="XR-flex data-v-1221aae7"><block wx:for="{{XRMK}}" wx:for-item="item" wx:for-index="index"><navigator class="XRTZ data-v-1221aae7" url="{{item.url}}"><image class="XRTP data-v-1221aae7" src="{{item.image}}"></image></navigator></block></view></view>
