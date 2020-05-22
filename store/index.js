@@ -1,51 +1,38 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import activity from './activity.js'
+import bottombar from './bottombar.js'
+import carousel from './carousel.js'
+import navigators from './navigators.js'
+import newhuman from './newhuman.js'
+import seckill from './seckill.js'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
 	
 	state: {
-		//carrousel.vue
-		// background: [['color1','A'],['color2','B'],['color3','C']]
-		background:[
-			{
-				img: "../../static/carousel.jpg"
-			},
-			{
-				img: "../../static/carousel1.jpg"
-			},
-			{
-				img: "../../static/carousel2.jpg"
-			}
-			
-		],
-		//activity.vue
-		swiper: {
-			margin: "240rpx",
-			index: 0
-		},
-		activity: [
-			{
-				image: "../../static/activity.png",
-				url: "../../pagess/index/index"
-			},
-			{
-				image: "../../static/activity.png",
-				url: "../../pagess/index/index"
-			},
-			{
-				image: "../../static/activity.png",
-				url: "../../pagess/index/index"
-			},
-			{
-				image: "../../static/activity.png",
-				url: "../../pagess/index/index"
-			}
-		],
-	},
+		
+	}, 
 	mutations: {
+		changeValue(){
+			alert(1)
+		}
+	},
+	actions: {
 		
 	},
+	getters: {
+		
+	},
+	modules: {
+		activity,
+		bottombar,
+		carousel,
+		navigators,
+		newhuman,
+		seckill
+	}
+	
 	
 	
 })

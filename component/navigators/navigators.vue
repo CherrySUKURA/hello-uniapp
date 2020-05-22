@@ -4,29 +4,17 @@
 			<swiper class="swiper content" indicator-dots="true" circular="false" indicator-color="gray" indicator-active-color="red">
 				<swiper-item class="swiper-item">
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list" :key="index">
-							<image :src="item"></image>
-							<text>{{index}}</text>
-						</navigator>
-					</view>
-					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list2" :key="index">
-							<image :src="item"></image>
-							<text>{{index}}</text>
+						<navigator class="navigator-list" v-for="(item,index) in navigators.navigator_list" :key="index">
+							<image :src="item.img"></image>
+							<text>{{item.name}}</text>
 						</navigator>
 					</view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list3" :key="index">
-							<image :src="item"></image>
-							<text>{{index}}</text>
-						</navigator>
-					</view>
-					<view class="navigator-flex">
-						<navigator class="navigator-list" v-for="(item,index) in navigator_list4" :key="index">
-							<image :src="item"></image>
-							<text>{{index}}</text>
+						<navigator class="navigator-list" v-for="(item,index) in navigators.navigator_list2" :key="index">
+							<image :src="item.img"></image>
+							<text>{{item.name}}</text>
 						</navigator>
 					</view>
 				</swiper-item>
@@ -38,37 +26,16 @@
 
 <script>
 	export default {
+		props: {
+			Vnavigators: {
+				type: Object
+			}
+		},
 		data() {
 			return {
-				navigator_list: {
-					"京东超市": "../../static/JDCS.png",
-					"数码电器": "../../static/JDCS.png",
-					"京东服饰": "../../static/JDCS.png",
-					"叮咚生鲜": "../../static/JDCS.png",
-					"京东到家": "../../static/JDCS.png",
-				},
-				navigator_list2: {
-					"充值缴费": "../../static/JDCS.png",
-					"9.9元拼": "../../static/JDCS.png",
-					"领劵": "../../static/JDCS.png",
-					"赚钱": "../../static/JDCS.png",
-					"PLUS会员": "../../static/JDCS.png",
-				},
-				navigator_list3: {
-					"京东超市": "../../static/JDCS.png",
-					"数码电器": "../../static/JDCS.png",
-					"京东服饰": "../../static/JDCS.png",
-					"叮咚生鲜": "../../static/JDCS.png",
-					"京东到家": "../../static/JDCS.png",
-				},
-				navigator_list4: {
-					"充值缴费": "../../static/JDCS.png",
-					"9.9元拼": "../../static/JDCS.png",
-					"领劵": "../../static/JDCS.png",
-					"赚钱": "../../static/JDCS.png",
-					"PLUS会员": "../../static/JDCS.png",
-				}
+				navigators: this.Vnavigators.navigators
 			}
+			
 		},
 		methods: {
 			
@@ -82,21 +49,25 @@
 		border-radius: 15rpx;
 	}
 	.navigator-flex{
+		width: 100%;
+		height: 150rpx;
 		display: flex;
 		flex-flow:row wrap;
 		justify-content:space-around;
-		margin-bottom: 40rpx;
+		align-content: space-between;
 		text-align: center;
 		font-size: 22rpx;
 
 	}
 	.navigator-list{
-		width: 110rpx;
-		height: 110rpx;
-		margin-top:20rpx;
+		width: 20%;
+		height: 150rpx;
+		margin-top: 20rpx;
 	}
 	.navigator-list image{
 		width: 100rpx;
 		height: 100rpx;
+		margin: auto;
+		display: block;
 	}
 </style>

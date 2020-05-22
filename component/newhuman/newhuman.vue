@@ -1,27 +1,24 @@
 <template>
 	<view class="newhuman-content content">
 		<view class="XR-flex">
-			<navigator class="XRTZ" v-for="(item,index) in XRMK" :url="item.url">
+			<navigator class="XRTZ" v-for="(item,index) in newhuman.XRMK" :url="item.url">
 				<image :src="item.image" class="XRTP"></image>
 			</navigator>
 		</view>
 	</view>
+
 </template>
 
 <script>
 	export default {
+		props: {
+			Vnewhuman: {
+				type: Object
+			}
+		},
 		data() {
 			return {
-				XRMK: [
-					{
-						image: "../../static/XRNINE.png",
-						url: ""
-					},
-					{
-						image: "../../static/XRZX.png",
-						url: ""
-					}
-				]
+				newhuman: this.Vnewhuman.newhuman
 			}
 		},
 		methods: {

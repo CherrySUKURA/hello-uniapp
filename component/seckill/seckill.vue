@@ -3,9 +3,10 @@
 		<view class="seckill-text">
 			<text>商城秒杀</text>
 		</view>
+
 		<view>
 			<scroll-view class="seckill-scroll" show-scrollbar="true" scroll-x="true" scroll-left="120">
-			    <view id="demo1" v-for="(item,index) in nihao" class="seckill-shop">
+			    <view id="demo1" v-for="(item,index) in seckill.seckill_shop" class="seckill-shop">
 					<image :src="item.img"></image>
 					<br/>
 					<text class="SPYJ">${{ item.SPYJ }}</text>
@@ -14,48 +15,26 @@
 				</view>
 			</scroll-view>
 		</view>
+
 	</view>
 </template>
 
 <script>
+	import http from "../../commons/http.js"
 	export default {
+		props: {
+			Vseckill: {
+				type: Object
+			}
+		},
+
 		data() {
 			return {
-				nihao: [
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					},
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					},
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					},
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					},
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					},
-					{
-						img: "../../static/SP.jpg",
-						SPYJ: "1399",
-						SPXJ: "2900"
-					}
-				]
+				seckill: this.Vseckill.seckill
 			}
 		},
 		methods: {
+			
 			
 		}
 	}

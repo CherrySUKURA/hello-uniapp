@@ -1,7 +1,7 @@
 <template>
 	<view class="carousel-content content">
 		<swiper class="swiper content" indicator-dots="true" circular="true">
-			<swiper-item v-for="(item,index) in background" class="swiper-item">
+			<swiper-item v-for="(item,index) in carousel.background" class="swiper-item">
 				<image class="carousel-image" :src="item.img"></image>
 			</swiper-item>
 		</swiper>
@@ -9,15 +9,18 @@
 </template>
 
 <script>
-	import { mapState,mapAction,mapGetter,mapMoutations} from 'vuex'
+
 	export default {
+		props:{
+			Vcarousel: Object
+		},
 		data() {
 			return {
-
+				carousel: this.Vcarousel.carousel
 			}
 		},
 		computed: {
-			...mapState(['background'])
+			
 		}
 	}
 </script>
