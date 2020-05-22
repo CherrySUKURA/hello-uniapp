@@ -13,6 +13,7 @@
 
 <script>
 	import http from "../../commons/http.js"
+	import activitystore from "../../store/activity.js"
 	export default {
 		props: {
 			Vactivity: {
@@ -32,22 +33,19 @@
 				this.activity.swiper.index = e.detail.current 
 			},
 			a(e){
-					// this.$store.dispatch('activity/changeValue',e)
-					// this.$store.commit('activity/changeValue',e)
+					activitystore.commit('changeValue',e)
 			}
 		},
 		created(){
 			http.axios('Get',{},this.activityurl).then(
 			(res) => {
-				console.log(res)
-				// this.a(res)
+				// console.log(res)
+				this.a(res)
 			}).catch(
 			(err) => {
 				console.log(err)
 			})
-			
-			
-		}
+		},
 	}
 </script>
 

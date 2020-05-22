@@ -3,9 +3,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-	namespaced:true,
-	value:"",
 	activity:{
+		value:"",
 		swiper: {
 			margin: "240rpx",
 			index: 0
@@ -34,13 +33,11 @@ const mutations = {
 
 	changeValue(state,newVal){
 		console.log(newVal)
-		state.value=newVal
+		state.activity.value=newVal
 	}
 }
 const actions = {
-	changeValue1({commmit}){
-		commmit(changeValue,newVal)
-	}
+
 }
 const getters = {
 		
