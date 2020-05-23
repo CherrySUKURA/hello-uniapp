@@ -1,7 +1,7 @@
 <template>
 	<view class="bottombar-content content">
 		<view class="bottombar-flex">
-			<navigator v-for="(item,index) in bottombar_list" @click="bottomnA(item.url)" class="bottombar-list">
+			<navigator v-for="(item,index) in bottombar.bottombar_list" @click="bottomnA(item.url)" class="bottombar-list">
 				<image :src="item.img"></image>
 			</navigator>
 		</view>
@@ -9,6 +9,9 @@
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
+	import http from "../../commons/http.js"
+	import bottombarstore from "../../store/bottombar.js"
 	export default {
 		props: {
 			indexnumber: {
@@ -20,28 +23,7 @@
 		},
 		data() {
 			return {
-				bottombar_list: [
-						{
-							url: '/pages/index/index',
-							img: '../../static/SY.png'
-						},
-						{
-							url: '/pages/fu/fu',
-							img: '../../static/SY.png'
-						},
-						{
-							url: '/pages/fu/fu',
-							img: '../../static/SY.png'
-						},
-						{
-							url: '/pages/fu/fu',
-							img: '../../static/SY.png'
-						},
-						{
-							url: '/pages/fu/fu',
-							img: '../../static/SY.png'
-						}
-					]
+				bottombar: ""
 			}
 		},
 		methods: {
@@ -51,8 +33,18 @@
 				})
 			}
 		},
+		computed:{
+			...mapState({
+				bottombars: state => state.bottombar.bottombar
+			}),
+			Vbottombar: function() {
+				return this.bottombars
+			}
+		},
 		created: function (){
-			this.bottombar_list[this.indexnumber].img = "../../static/SY_ACTIVE.png"
+			this.bottombar = this.Vbottombar
+			this.Vbottombar.bottombar_list[this.indexnumber].img = "../../static/SY_ACTIVE.png" 
+			// bottombarstore.commit("bottomNo",this.indexnumber)
 		}
 	}
 </script>

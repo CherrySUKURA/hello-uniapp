@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<view class="activity">
+			<v-activity :activityurl="activityurl"></v-activity>
+		</view>
 		<view class="bottombar">
 			<v-bottombar :indexnumber='indexnumber'></v-bottombar>
 		</view>
@@ -7,18 +10,24 @@
 </template>
 
 <script>
-		import bottombar from "../../component/bottombar/bottombar"
+	import bottombar from "../../component/bottombar/bottombar"
+	import activity from "../../component/activity/activity"
 	export default {
 		data() {
 			return {
-				indexnumber : 1
+				indexnumber : 1,
+				activityurl: '222222'
 			}
 		},
 		methods: {
 			
 		},
 		components: {
-			"v-bottombar": bottombar 
+			"v-bottombar": bottombar ,
+			"v-activity": activity
+		},
+		computed:{
+
 		}
 		
 		// onLoad: function() {

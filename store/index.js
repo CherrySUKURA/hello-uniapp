@@ -14,9 +14,7 @@ const store = new Vuex.Store({
 		
 	}, 
 	mutations: {
-		changeValue(){
-			alert(1)
-		}
+		
 	},
 	actions: {
 		

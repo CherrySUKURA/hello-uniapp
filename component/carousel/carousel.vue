@@ -9,18 +9,31 @@
 </template>
 
 <script>
-
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
+	import http from "../../commons/http.js"
 	export default {
 		props:{
-			Vcarousel: Object
+			carouselurl: {
+				type: String
+			}
 		},
 		data() {
 			return {
-				carousel: this.Vcarousel.carousel
+				carousel: ""
 			}
 		},
 		computed: {
-			
+			...mapState({
+				carousels: state =>  state.carousel.carousel,
+				value: state => state.carousel.value
+			}),
+			Vcarousel: function() {
+				return this.carousels
+			}
+		},
+		created() {
+			this.carousel = this.Vcarousel
+			console.log(this.value)
 		}
 	}
 </script>

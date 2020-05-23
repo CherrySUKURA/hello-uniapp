@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
+	value:"",
 	carousel:{
 		background:[
 			{
@@ -19,7 +20,9 @@ const state = {
 	}
 }
 const mutations = {
-	
+	changeValue(state,newVal){
+		state.activity.value=newVal
+	}
 }
 const actions = {
 	

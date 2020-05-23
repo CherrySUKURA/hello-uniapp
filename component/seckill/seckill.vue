@@ -20,22 +20,34 @@
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
 	import http from "../../commons/http.js"
 	export default {
 		props: {
-			Vseckill: {
-				type: Object
+			seckillurl:{
+				type: String
 			}
 		},
 
 		data() {
 			return {
-				seckill: this.Vseckill.seckill
+				seckill: ""
 			}
 		},
 		methods: {
 			
 			
+		},
+		computed: {
+			...mapState({
+				seckills: state => state.seckill.seckill
+			}),
+			Vseckill: function() {
+				return this.seckills
+			}
+		},
+		created() {
+			this.seckill = this.Vseckill
 		}
 	}
 </script>

@@ -19,26 +19,39 @@
 					</view>
 				</swiper-item>
 			</swiper>
-
 		
 	</view>
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
+	import http from "../../commons/http.js"
 	export default {
 		props: {
-			Vnavigators: {
-				type: Object
+			navigatorurl: {
+				type: String
 			}
 		},
 		data() {
 			return {
-				navigators: this.Vnavigators.navigators
+				navigators: ""
 			}
 			
 		},
 		methods: {
 			
+		},
+		computed: {
+			...mapState({
+				navigatories: state => state.navigators.navigators
+			}),
+			Vnavigators: function() {
+				return this.navigatories
+			}
+		},
+		created() {
+			this.navigators = this.Vnavigators
+			console.log(this.Vnavigators)
 		}
 	}
 </script>

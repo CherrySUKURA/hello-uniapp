@@ -32,8 +32,8 @@ const state = {
 const mutations = {
 
 	changeValue(state,newVal){
-		console.log(newVal)
 		state.activity.value=newVal
+		console.log(state.activity.value)
 	}
 }
 const actions = {

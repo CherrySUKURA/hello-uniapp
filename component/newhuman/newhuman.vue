@@ -10,19 +10,32 @@
 </template>
 
 <script>
+	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
+	import http from "../../commons/http.js"
 	export default {
 		props: {
-			Vnewhuman: {
-				type: Object
+			newhumanurl: {
+				type: String
 			}
 		},
 		data() {
 			return {
-				newhuman: this.Vnewhuman.newhuman
+				newhuman: ""
 			}
 		},
 		methods: {
 			
+		},
+		computed: {
+			...mapState({
+				newhumens: state => state.newhuman.newhuman
+			}),
+			Vnewhuman: function() {
+				return this.newhumens
+			}
+		},
+		created() {
+			this.newhuman = this.Vnewhuman
 		}
 	}
 </script>
