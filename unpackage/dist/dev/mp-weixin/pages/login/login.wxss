@@ -1,0 +1,33 @@
+
+.bottombar-flex.data-v-668308d9{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-flow:row wrap;
+	        flex-flow:row wrap;
+	-webkit-justify-content:space-around;
+	        justify-content:space-around;
+}
+.bottombar-list.data-v-668308d9{
+	width: 80rpx;
+	height: 80rpx;
+	margin-top: 10rpx;
+}
+.bottombar-list image.data-v-668308d9{
+	width: 80rpx;
+	height: 80rpx;
+}
+
+
+.bottombar{
+	width: 100%;
+	height: 150rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 20rpx;
+	background-color: #FFFFFF;
+}
+

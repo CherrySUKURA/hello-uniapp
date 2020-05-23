@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "v-bottombar": "/component/bottombar/bottombar"
+    "v-bottombar": "/component/bottombar/bottombar",
+    "v-activity": "/component/activity/activity"
   }
 }

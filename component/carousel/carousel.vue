@@ -1,7 +1,7 @@
 <template>
 	<view class="carousel-content content">
 		<swiper class="swiper content" indicator-dots="true" circular="true">
-			<swiper-item v-for="(item,index) in carousel.background" class="swiper-item">
+			<swiper-item v-for="(item,index) in carousel.background" touchable="false" class="swiper-item">
 				<image class="carousel-image" :src="item.img"></image>
 			</swiper-item>
 		</swiper>

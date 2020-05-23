@@ -34,6 +34,10 @@
             "path" : "component/activity/activity",
             "style" : {}
         }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

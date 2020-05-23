@@ -5,6 +5,8 @@
 	        border-radius: 15rpx;
 }
 .navigator-flex.data-v-3b8c2707{
+	width: 100%;
+	height: 150rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -14,17 +16,20 @@
 	        flex-flow:row wrap;
 	-webkit-justify-content:space-around;
 	        justify-content:space-around;
-	margin-bottom: 40rpx;
+	-webkit-align-content: space-between;
+	        align-content: space-between;
 	text-align: center;
 	font-size: 22rpx;
 }
 .navigator-list.data-v-3b8c2707{
-	width: 110rpx;
-	height: 110rpx;
-	margin-top:20rpx;
+	width: 20%;
+	height: 150rpx;
+	margin-top: 20rpx;
 }
 .navigator-list image.data-v-3b8c2707{
 	width: 100rpx;
 	height: 100rpx;
+	margin: auto;
+	display: block;
 }
 

@@ -1,6 +1,6 @@
 <template>
 	<view class="activity-content content">
-		<swiper class="activity-swiper" :previous-margin="activity.swiper.margin" autoplay="true"  interval="3000" :next-margin='activity.swiper.margin' circular="true" current="true" @change="swiperChange">
+		<swiper class="activity-swiper" :previous-margin="activity.swiper.margin" autoplay="true" interval="3000" :next-margin='activity.swiper.margin' circular="true" current="true" @change="swiperChange">
 			<swiper-item class="activity-swiper-item" v-for="(item,index) in activity.activity_list"  :key="index" >
 				<navigator :url="item.url" class="a1">
 					<image :src="item.image" class='le-img' :class="{'le-active':swiper.index == index}"></image>

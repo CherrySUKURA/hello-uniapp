@@ -16,7 +16,7 @@
 		data() {
 			return {
 				indexnumber : 1,
-				activityurl: '222222'
+				activityurl: 'http://jsonplaceholder.typicode.com/users'
 			}
 		},
 		methods: {

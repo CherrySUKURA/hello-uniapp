@@ -1,9 +1,9 @@
 <template>
 	<view class="bottombar-content content">
 		<view class="bottombar-flex">
-			<navigator v-for="(item,index) in bottombar.bottombar_list" @click="bottomnA(item.url)" class="bottombar-list">
+			<view v-for="(item,index) in bottombar.bottombar_list" @click="bottomnA(item.url)" class="bottombar-list">
 				<image :src="item.img"></image>
-			</navigator>
+			</view>
 		</view>
 	</view>
 </template>
@@ -23,7 +23,35 @@
 		},
 		data() {
 			return {
-				bottombar: ""
+				bottombar: {
+					bottombar_list: [
+						{
+							url: '/pages/index/index',
+							img: '../../static/SY.png',
+							img_active: '../../static/SY_ACTIVE.png'
+						},
+						{
+							url: '/pages/fu/fu',
+							img: '../../static/SY.png',
+							img_active: '../../static/SY_ACTIVE.png'
+						},
+						{
+							url: '/pages/fu/fu',
+							img: '../../static/SY.png',
+							img_active: '../../static/SY_ACTIVE.png'
+						},
+						{
+							url: '/pages/fu/fu',
+							img: '../../static/SY.png',
+							img_active: '../../static/SY_ACTIVE.png'
+						},
+						{
+							url: '/pages/login/login',
+							img: '../../static/SY.png',
+							img_active: '../../static/SY_ACTIVE.png'
+						}
+					]
+				}
 			}
 		},
 		methods: {
@@ -34,16 +62,17 @@
 			}
 		},
 		computed:{
-			...mapState({
-				bottombars: state => state.bottombar.bottombar
-			}),
-			Vbottombar: function() {
-				return this.bottombars
-			}
+			// ...mapState({
+			// 	bottombars: state => state.bottombar.bottombar
+			// }),
+			// Vbottombar: function() {
+			// 	return this.bottombars
+			// }
 		},
 		created: function (){
-			this.bottombar = this.Vbottombar
-			this.Vbottombar.bottombar_list[this.indexnumber].img = "../../static/SY_ACTIVE.png" 
+			this.bottombar.bottombar_list[this.indexnumber].img = this.bottombar.bottombar_list[this.indexnumber].img_active
+			// this.Vbottombar.bottombar_list[this.indexnumber].img = "../../static/SY_ACTIVE.png" 
+			// this.bottombar = this.Vbottombar
 			// bottombarstore.commit("bottomNo",this.indexnumber)
 		}
 	}

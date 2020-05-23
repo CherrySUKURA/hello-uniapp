@@ -12,6 +12,7 @@
 <script>
 	import { mapState,mapAction,mapGetter,mapMutations } from 'vuex'
 	import http from "../../commons/http.js"
+	import newhumanstore from "../../store/newhuman.js"
 	export default {
 		props: {
 			newhumanurl: {

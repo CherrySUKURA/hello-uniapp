@@ -15,6 +15,7 @@
 		<view class="activity">
 			<v-activity :activityurl="activityurl"></v-activity>
 		</view>
+		<view class=""></view>
 		<view class="bottombar">
 			<v-bottombar :indexnumber='indexnumber'></v-bottombar>
 		</view>
@@ -60,10 +61,8 @@
 
 <style>
 	.index-content{
-		touch-action: none;
 		/* background-color: red; */
 		width: 100%;
-		height: 100%;
 		box-sizing: border-box;
 		padding: 0 20rpx;
 		padding-bottom: 170rpx;

@@ -7,7 +7,8 @@
     "component/seckill/seckill",
     "pages/fu/fu",
     "component/newhuman/newhuman",
-    "component/activity/activity"
+    "component/activity/activity",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {

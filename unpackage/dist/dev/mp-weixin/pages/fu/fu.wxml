@@ -1,1 +1,1 @@
-<view><view class="bottombar"><v-bottombar vue-id="0fc87040-1" indexnumber="{{indexnumber}}" bind:__l="__l"></v-bottombar></view></view>
+<view><view class="activity"><v-activity vue-id="0fc87040-1" activityurl="{{activityurl}}" bind:__l="__l"></v-activity></view><view class="bottombar"><v-bottombar vue-id="0fc87040-2" indexnumber="{{indexnumber}}" bind:__l="__l"></v-bottombar></view></view>
