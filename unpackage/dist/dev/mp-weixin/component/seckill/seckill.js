@@ -197,7 +197,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 73:
+/***/ 81:
 /*!***************************************************************************************************!*\
   !*** D:/Documents/HBuilderProjects/hello-uniapp/main.js?{"page":"component%2Fseckill%2Fseckill"} ***!
   \***************************************************************************************************/
@@ -213,5 +213,5 @@ createPage(_seckill.default);
 
 /***/ })
 
-},[[73,"common/runtime","common/vendor"]]]);
+},[[81,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/component/seckill/seckill.js.map

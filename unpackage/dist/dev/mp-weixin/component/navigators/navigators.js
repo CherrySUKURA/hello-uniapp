@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 71:
+/***/ 79:
 /*!*********************************************************************************************************!*\
   !*** D:/Documents/HBuilderProjects/hello-uniapp/main.js?{"page":"component%2Fnavigators%2Fnavigators"} ***!
   \*********************************************************************************************************/
@@ -217,5 +217,5 @@ createPage(_navigators.default);
 
 /***/ })
 
-},[[71,"common/runtime","common/vendor"]]]);
+},[[79,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/component/navigators/navigators.js.map

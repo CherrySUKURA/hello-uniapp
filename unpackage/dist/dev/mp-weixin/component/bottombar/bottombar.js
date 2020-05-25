@@ -224,7 +224,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 72:
+/***/ 80:
 /*!*******************************************************************************************************!*\
   !*** D:/Documents/HBuilderProjects/hello-uniapp/main.js?{"page":"component%2Fbottombar%2Fbottombar"} ***!
   \*******************************************************************************************************/
@@ -240,5 +240,5 @@ createPage(_bottombar.default);
 
 /***/ })
 
-},[[72,"common/runtime","common/vendor"]]]);
+},[[80,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/component/bottombar/bottombar.js.map

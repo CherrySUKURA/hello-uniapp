@@ -3,9 +3,22 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "商城"
+				"navigationBarTitleText": "",
+				"h5": {
+					"titleNView": false
+				}
 			}
 		}
+		,{
+		    "path" : "pages/fu/fu",
+		    "style" : {
+				"navigationBarTitleText": "",
+				"h5": {
+					"titleNView": false
+				}
+			}
+		}
+
         ,{
             "path" : "component/carousel/carousel",
             "style" : {}
@@ -23,10 +36,6 @@
 		    "style" : {}
 		}
         ,{
-            "path" : "pages/fu/fu",
-            "style" : {}
-        }
-        ,{
             "path" : "component/newhuman/newhuman",
             "style" : {}
         }
@@ -34,9 +43,20 @@
             "path" : "component/activity/activity",
             "style" : {}
         }
+
+        // ,{
+        //     "path" : "component/searchbar/searchbar",
+        //     "style" : {}
+        // }
+		
         ,{
             "path" : "pages/login/login",
-            "style" : {}
+            "style" : {
+            	"navigationBarTitleText": "",
+            	"h5": {
+            		"titleNView": false
+            	}
+            }
         }
     ],
 	"globalStyle": {

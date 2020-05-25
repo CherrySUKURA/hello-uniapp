@@ -1,7 +1,7 @@
 <template>
 	<view class="navigator-content content">
 
-			<swiper class="swiper content" indicator-dots="true" circular="false" indicator-color="gray" indicator-active-color="red">
+			<swiper class="swiper content" indicator-dots="true" indicator-color="gray" indicator-active-color="red">
 				<swiper-item class="swiper-item">
 					<view class="navigator-flex">
 						<navigator class="navigator-list" v-for="(item,index) in navigators.navigator_list" :key="index">

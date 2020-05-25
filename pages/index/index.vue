@@ -1,5 +1,8 @@
 <template>
 	<view class="index-content">
+		<view class="searchbar">
+			<v-searchbar></v-searchbar>
+		</view>
 		<view class="carousel">
 			<v-carousel :carouselurl="carouselurl"></v-carousel>
 		</view>
@@ -29,6 +32,7 @@
 	import seckill from "../../component/seckill/seckill"  
 	import newhuman from "../../component/newhuman/newhuman"
 	import activity from "../../component/activity/activity"
+	import searchbar from "../../component/searchbar/searchbar"
 	export default{
 		data() {
 			return {
@@ -51,7 +55,8 @@
 			"v-bottombar": bottombar ,
 			"v-seckill": seckill,
 			"v-newhuman": newhuman,
-			"v-activity": activity
+			"v-activity": activity,
+			"v-searchbar": searchbar
 		},
 		computed: {
 		
@@ -66,6 +71,15 @@
 		box-sizing: border-box;
 		padding: 0 20rpx;
 		padding-bottom: 170rpx;
+		padding-top: 100rpx;
+	}
+	.searchbar{
+		width: 100%;
+		height: 100rpx;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100000;
 	}
 	.carousel{
 		width: 100%;

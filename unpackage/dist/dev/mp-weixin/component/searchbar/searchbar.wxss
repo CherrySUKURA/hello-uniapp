@@ -1,0 +1,57 @@
+
+.searchbar-content{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	background-color: #FFFFFF;
+}
+.button-btn{
+	width: 60rpx;
+	height: 60rpx;
+	position: relative;
+}
+.button-left image{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.button-right image{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+}
+.search{
+	width: 500rpx;
+	height: 100%;
+	position: relative;
+}
+.search input{
+	width: 420rpx;
+	height: 60rpx;
+	margin-top: 28rpx;
+	border: 1rpx solid black;
+	-webkit-border-radius: 25rpx;
+	        border-radius: 25rpx;
+	padding: 0 50rpx 0 30rpx;
+}
+.searchimag {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 38rpx;
+	right: 20rpx;
+}
+

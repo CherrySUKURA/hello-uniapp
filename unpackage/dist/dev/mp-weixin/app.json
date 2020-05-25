@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/fu/fu",
     "component/carousel/carousel",
     "component/navigators/navigators",
     "component/bottombar/bottombar",
     "component/seckill/seckill",
-    "pages/fu/fu",
     "component/newhuman/newhuman",
     "component/activity/activity",
     "pages/login/login"
@@ -17,5 +17,6 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap28.json"
 }

@@ -183,7 +183,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 70:
+/***/ 78:
 /*!*****************************************************************************************************!*\
   !*** D:/Documents/HBuilderProjects/hello-uniapp/main.js?{"page":"component%2Fcarousel%2Fcarousel"} ***!
   \*****************************************************************************************************/
@@ -199,5 +199,5 @@ createPage(_carousel.default);
 
 /***/ })
 
-},[[70,"common/runtime","common/vendor"]]]);
+},[[78,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/component/carousel/carousel.js.map

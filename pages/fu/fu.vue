@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<view class="searchbar">
+			<v-searchbar></v-searchbar>
+		</view>
 		<view class="activity">
 			<v-activity :activityurl="activityurl"></v-activity>
 		</view>
@@ -12,6 +15,7 @@
 <script>
 	import bottombar from "../../component/bottombar/bottombar"
 	import activity from "../../component/activity/activity"
+	import searchbar from "../../component/searchbar/searchbar"
 	export default {
 		data() {
 			return {
@@ -24,10 +28,16 @@
 		},
 		components: {
 			"v-bottombar": bottombar ,
-			"v-activity": activity
+			"v-activity": activity,
+			"v-searchbar": searchbar
 		},
 		computed:{
 
+		},
+		onShow() {
+			if(wx.hideHomeButton){  
+			    wx.hideHomeButton();  
+			}  
 		}
 		
 		// onLoad: function() {

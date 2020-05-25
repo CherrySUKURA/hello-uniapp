@@ -149,6 +149,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
 var _carousel = _interopRequireDefault(__webpack_require__(/*! ../../component/carousel/carousel */ 25));
 var _navigators = _interopRequireDefault(__webpack_require__(/*! ../../component/navigators/navigators */ 33));
 var _bottombar = _interopRequireDefault(__webpack_require__(/*! ../../component/bottombar/bottombar */ 40));
@@ -178,8 +181,10 @@ var _activity = _interopRequireDefault(__webpack_require__(/*! ../../component/a
 //
 //
 //
-var _default = { data: function data() {return { indexnumber: 0, carouselurl: '', navigatorsurl: '', seckillurl: '', bottombarurl: '', newhumanurl: '', activityurl: 'http://jsonplaceholder.typicode.com/users' };}, methods: {}, components: { "v-carousel": _carousel.default, "v-navigators": _navigators.default, "v-bottombar": _bottombar.default, "v-seckill": _seckill.default, "v-newhuman": _newhuman.default, "v-activity": _activity.default },
-  computed: {} };exports.default = _default;
+//
+//
+//
+var searchbar = function searchbar() {__webpack_require__.e(/*! require.ensure | component/searchbar/searchbar */ "component/searchbar/searchbar").then((function () {return resolve(__webpack_require__(/*! ../../component/searchbar/searchbar */ 93));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { indexnumber: 0, carouselurl: '', navigatorsurl: '', seckillurl: '', bottombarurl: '', newhumanurl: '', activityurl: 'http://jsonplaceholder.typicode.com/users' };}, methods: {}, components: { "v-carousel": _carousel.default, "v-navigators": _navigators.default, "v-bottombar": _bottombar.default, "v-seckill": _seckill.default, "v-newhuman": _newhuman.default, "v-activity": _activity.default, "v-searchbar": searchbar }, computed: {} };exports.default = _default;
 
 /***/ }),
 /* 25 */

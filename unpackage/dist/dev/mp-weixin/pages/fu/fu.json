@@ -1,6 +1,8 @@
 {
+  "navigationBarTitleText": "",
   "usingComponents": {
     "v-bottombar": "/component/bottombar/bottombar",
-    "v-activity": "/component/activity/activity"
+    "v-activity": "/component/activity/activity",
+    "v-searchbar": "/component/searchbar/searchbar"
   }
 }
